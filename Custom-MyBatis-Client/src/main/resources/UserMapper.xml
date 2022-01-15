@@ -1,0 +1,23 @@
+<mapper namespace="cc.ilooli.mapper">
+
+    <!--sql的唯一标识，由namespace.id组成：statementId-->
+    <select id="findAll" resultType="cc.ilooli.pojo.User">
+        select * from user
+    </select>
+
+    <select id="findOne" resultType="cc.ilooli.pojo.User" parameterType="cc.ilooli.pojo.User">
+        select * from user where id = #{id} and name = #{name}
+    </select>
+
+    <insert id="insertOne">
+        insert into user value(#{id}, #{name}, #{pwd})
+    </insert>
+
+    <update id="update">
+        update user set
+    </update>
+
+    <delete id="delete">
+        delete fron user where id = #{id}
+    </delete>
+</mapper>

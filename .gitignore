@@ -1,0 +1,3 @@
+# 项目排除路径
+/Custom-MyBatis-Client/target/
+/Custom-MyBatis-Core/target/
